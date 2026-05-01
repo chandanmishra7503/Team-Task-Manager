@@ -1,9 +1,21 @@
+# Backend
 **/target/
 **/.idea/
-**/.vscode/
+
+# Frontend
 **/node_modules/
 **/dist/
+
+# Env files
 **/.env
 **/.env.*
-**/*.log
 
+# Logs
+*.log
+
+# VS Code
+**/.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
