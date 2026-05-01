@@ -1,0 +1,9 @@
+**/target/
+**/.idea/
+**/.vscode/
+**/node_modules/
+**/dist/
+**/.env
+**/.env.*
+**/*.log
+

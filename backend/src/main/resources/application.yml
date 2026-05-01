@@ -1,0 +1,24 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/team_task_manager}
+    username: postgres
+    password: "@Arman2467A"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+    open-in-view: false
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:dev-change-me-please-set-a-strong-jwt-secret}
+    expirationMinutes: ${JWT_EXP_MINUTES:10080} # 7 days
+  cors:
+    allowedOrigins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173}
+
